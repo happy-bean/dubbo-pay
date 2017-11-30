@@ -39,6 +39,13 @@
       <version>0.0.3</version>
     </dependency>
 
+    <!--支付宝支付sdk-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>alipay-sdk-java</artifactId>
+      <version>20171012102412</version>
+     </dependency>
+
   </dependencies>
   <build>
     <finalName>dubbo-pay</finalName>
