@@ -17,6 +17,8 @@
   <!--基于dubbo构建的支付中心-->
   <name>dubbo-pay Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+  <!--依赖-->
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -25,11 +27,11 @@
       <scope>test</scope>
     </dependency>
 
-    <!--util-->
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>3.4</version>
+      <version>3.6</version>
     </dependency>
 
     <!--微信刷卡支付sdk-->
@@ -43,8 +45,54 @@
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>alipay-sdk-java</artifactId>
-      <version>20171012102412</version>
+      <version>20171123203126</version>
      </dependency>
+
+    <!--支付宝依赖包-->
+    <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+      <version>1.3</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.3</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>core</artifactId>
+      <version>2.1</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/commons-configuration/commons-configuration -->
+    <dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+      <version>1.10</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.10</version>
+    </dependency>
+
+
+
+    <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.1.1</version>
+    </dependency>
 
   </dependencies>
   <build>
