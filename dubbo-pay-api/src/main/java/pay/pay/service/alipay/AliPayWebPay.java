@@ -9,7 +9,7 @@ import java.util.Map;
  * @date 2017-12-01 下午2:17
  * @description 支付宝网站支付
  **/
-public interface AliPayWebPay {
+public interface AliPayWebPay extends AliPay{
 
     /**
      * 统一收单下单并支付页面接口
@@ -22,15 +22,6 @@ public interface AliPayWebPay {
     Result<?> pagePay(boolean isSandbox,Map<String, String> map);
 
     /**
-     * 统一收单交易退款接口
-     *
-     * @param isSandbox 是否沙箱模式
-     * @param map
-     * @return
-     */
-    Result<?> refund(boolean isSandbox,Map<String, String> map);
-
-    /**
      * 统一收单交易退款查询接口
      *
      * @param isSandbox 是否沙箱模式
@@ -38,15 +29,6 @@ public interface AliPayWebPay {
      * @return
      */
     Result<?> refundQuery(boolean isSandbox,Map<String, String> map);
-
-    /**
-     * 统一收单线下交易查询接口
-     *
-     * @param isSandbox 是否沙箱模式
-     * @param map
-     * @return
-     */
-    Result<?> tradeQuery(boolean isSandbox,Map<String, String> map);
 
     /**
      * 统一收单交易关闭接口
@@ -57,12 +39,4 @@ public interface AliPayWebPay {
      */
     Result<?> tradeClose(boolean isSandbox,Map<String, String> map);
 
-    /**
-     * 查询对账单下载地址
-     *
-     * @param isSandbox 是否沙箱模式
-     * @param map
-     * @return
-     */
-    Result<?> billDownloadUrlQuery(boolean isSandbox,Map<String, String> map);
-}
+ }
