@@ -1,4 +1,4 @@
-package pay.pay.service.wechat;
+package pay.pay.api.wechat;
 
 import pay.common.baseRsult.Result;
 
@@ -18,7 +18,7 @@ public interface WechatPay {
      * @param map
      * @return
      */
-    Result<Map<String, String>> unifiedOrder(boolean isSandbox,Map<String, String> map);
+    Result<Map<String, String>> unifiedOrder(boolean isSandbox, Map<String, String> map);
 
     /**
      * 查询订单
@@ -28,7 +28,7 @@ public interface WechatPay {
      * @param map
      * @return
      */
-    Result<Map<String, String>> orderQuery(boolean isSandbox,Map<String, String> map);
+    Result<Map<String, String>> orderQuery(boolean isSandbox, Map<String, String> map);
 
     /**
      * 撤销订单
@@ -38,7 +38,7 @@ public interface WechatPay {
      * @param map
      * @return
      */
-    Result<Map<String, String>> reverse(boolean isSandbox,Map<String, String> map);
+    Result<Map<String, String>> reverse(boolean isSandbox, Map<String, String> map);
 
     /**
      * 关闭订单
@@ -47,7 +47,7 @@ public interface WechatPay {
      * @param map
      * @return
      */
-    Result<Map<String, String>> closeOrder(boolean isSandbox,Map<String, String> map);
+    Result<Map<String, String>> closeOrder(boolean isSandbox, Map<String, String> map);
 
     /**
      * 申请退款
@@ -57,7 +57,7 @@ public interface WechatPay {
      * @param map
      * @return
      */
-    Result<Map<String, String>> refund(boolean isSandbox,Map<String, String> map);
+    Result<Map<String, String>> refund(boolean isSandbox, Map<String, String> map);
 
     /**
      * 查询退款
@@ -67,7 +67,7 @@ public interface WechatPay {
      * @param map
      * @return
      */
-    Result<Map<String, String>> refundQuery(boolean isSandbox,Map<String, String> map);
+    Result<Map<String, String>> refundQuery(boolean isSandbox, Map<String, String> map);
 
     /**
      * 下载对账单
@@ -77,7 +77,7 @@ public interface WechatPay {
      * @param map
      * @return
      */
-    Result<Map<String, String>> downloadBill(boolean isSandbox,Map<String, String> map);
+    Result<Map<String, String>> downloadBill(boolean isSandbox, Map<String, String> map);
 
     /**
      * 交易保障
@@ -87,7 +87,7 @@ public interface WechatPay {
      * @param map
      * @return
      */
-    Result<Map<String, String>> report(boolean isSandbox,Map<String, String> map);
+    Result<Map<String, String>> payitilReport(boolean isSandbox, Map<String, String> map);
 
     /**
      * 转换短链接
@@ -97,7 +97,7 @@ public interface WechatPay {
      * @param map
      * @return
      */
-    Result<Map<String, String>> shotUrl(boolean isSandbox,Map<String, String> map);
+    Result<Map<String, String>> shotUrl(boolean isSandbox, Map<String, String> map);
 
     /**
      * 授权码查询openid
@@ -107,7 +107,7 @@ public interface WechatPay {
      * @param map
      * @return
      */
-    Result<Map<String, String>> authCodeToOpenid(boolean isSandbox,Map<String, String> map);
+    Result<Map<String, String>> authCodeToOpenid(boolean isSandbox, Map<String, String> map);
 
     /**
      * 拉取订单评价数据
@@ -117,5 +117,5 @@ public interface WechatPay {
      * @param map
      * @return
      */
-    Result<Map<String, String>> batchQueryComment(boolean isSandbox,Map<String, String> map);
+    Result<Map<String, String>> batchQueryComment(boolean isSandbox, Map<String, String> map);
 }

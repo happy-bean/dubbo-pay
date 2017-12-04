@@ -1,4 +1,4 @@
-package pay.pay.service.wechat;
+package pay.pay.api.wechat;
 
 import pay.common.baseRsult.Result;
 
@@ -16,9 +16,10 @@ public interface WechatCardPay extends WechatPay{
      * 提交刷卡支付
      * -收银员使用扫码设备读取微信用户刷卡授权码以后，二维码或条码信息传送至商户收银台，由商户收银台或者商户后台调用该接口发起支付。
      *
+     * @param isSandbox 是否沙盒模式
      * @param map
      * @return
      */
-    Result<Map<String, String>> microPay(Map<String, String> map);
+    Result<Map<String, String>> microPay(boolean isSandbox,Map<String, String> map);
 
 }

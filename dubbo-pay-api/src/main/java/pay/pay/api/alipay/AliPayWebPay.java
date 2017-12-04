@@ -1,4 +1,4 @@
-package pay.pay.service.alipay;
+package pay.pay.api.alipay;
 
 import pay.common.baseRsult.Result;
 

@@ -1,4 +1,4 @@
-package pay.pay.service.wechat;
+package pay.pay.api.wechat;
 
 /**
  * @author wgt
