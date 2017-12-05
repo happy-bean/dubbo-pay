@@ -1,7 +1,9 @@
 package pay.pay.api.alipay;
 
+import com.alipay.demo.trade.model.GoodsDetail;
 import pay.common.baseRsult.Result;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -16,9 +18,10 @@ public interface AlipayScanPay extends AliPay{
      *
      * @param isSandbox 是否沙箱模式
      * @param map
+     * @param goodsDetailList
      * @return
      * */
-    Result<?> tradePay(boolean isSandbox, Map<String, String> map);
+    Result<?> tradePay(boolean isSandbox, Map<String, String> map,List<GoodsDetail> goodsDetailList);
 
     /**
      * 统一收单交易撤销接口

@@ -22,9 +22,10 @@
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.7" level="project" />
     <orderEntry type="library" name="Maven: com.github.wxpay:wxpay-sdk:0.0.3" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:alipay-sdk-java:20171123203126" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:alipay-trade-sdk:20161215" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.3" level="project" />
     <orderEntry type="library" name="Maven: com.google.zxing:core:2.1" level="project" />

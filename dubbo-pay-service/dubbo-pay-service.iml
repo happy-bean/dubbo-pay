@@ -12,5 +12,8 @@
     <orderEntry type="module" module-name="dubbo-pay-api" />
     <orderEntry type="module" module-name="dubbo-pay-common" />
     <orderEntry type="library" name="Maven: com.github.wxpay:wxpay-sdk:0.0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:alipay-trade-sdk:20161215" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:alipay-sdk-java:20171123203126" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
   </component>
 </module>
