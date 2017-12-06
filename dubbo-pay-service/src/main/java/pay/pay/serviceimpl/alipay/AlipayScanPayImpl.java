@@ -18,6 +18,7 @@ import com.alipay.demo.trade.service.impl.AlipayTradeServiceImpl;
 import com.alipay.demo.trade.service.impl.AlipayTradeWithHBServiceImpl;
 import com.alipay.demo.trade.utils.Utils;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Service;
 import pay.common.baseRsult.Result;
 import pay.common.enums.ResultMess;
 import pay.pay.api.alipay.AlipayScanPay;
@@ -30,6 +31,7 @@ import java.util.Map;
  * @date 2017-12-05 上午10:38
  * @description 支付宝扫码支付（当面付）
  **/
+@Service
 public class AlipayScanPayImpl extends AlipayImpl implements AlipayScanPay {
 
     /**
@@ -308,7 +310,7 @@ public class AlipayScanPayImpl extends AlipayImpl implements AlipayScanPay {
         /**
          * (必填) 商户门店编号，退款情况下可以为商家后台提供退款权限判定和统计等作用，详询支付宝技术支持
          * */
-        String storeId = "test_store_id";
+        String storeId = map.get("storeId");
 
         /**
          * 创建退款请求builder，设置请求参数
@@ -367,8 +369,5 @@ public class AlipayScanPayImpl extends AlipayImpl implements AlipayScanPay {
         return null;
     }
 
-    public static void main(String[] args) {
-
-    }
 }
 

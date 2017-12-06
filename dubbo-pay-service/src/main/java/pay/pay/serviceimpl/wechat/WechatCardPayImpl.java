@@ -2,6 +2,7 @@ package pay.pay.serviceimpl.wechat;
 
 import com.github.wxpay.sdk.WXPay;
 import com.github.wxpay.sdk.WXPayConstants;
+import org.springframework.stereotype.Service;
 import pay.common.baseRsult.Result;
 import pay.common.enums.ResultMess;
 import pay.common.utils.UUIDUtil;
@@ -17,6 +18,7 @@ import java.util.UUID;
  * @description 微信刷卡支付
  * -刷卡支付是用户展示微信钱包内的“刷卡条码/二维码”给商户系统扫描后直接完成支付的模式。主要应用线下面对面收银的场景。
  **/
+@Service
 public class WechatCardPayImpl extends WechatPayImpl implements WechatCardPay{
 
     /**

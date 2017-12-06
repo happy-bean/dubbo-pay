@@ -2,6 +2,7 @@ package pay.pay.serviceimpl.wechat;
 
 import com.github.wxpay.sdk.WXPay;
 import com.github.wxpay.sdk.WXPayConstants;
+import org.springframework.stereotype.Service;
 import pay.common.baseRsult.Result;
 import pay.common.enums.ResultMess;
 import pay.common.utils.UUIDUtil;
@@ -15,6 +16,7 @@ import java.util.Map;
  * @date 2017-12-04 下午1:22
  * @description 微信支付
  **/
+@Service
 public class WechatPayImpl implements WechatPay {
 
     /**

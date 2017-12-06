@@ -9,7 +9,6 @@
         <module name="dubbo-pay-api" />
         <module name="dubbo-pay-common" />
         <module name="dubbo-pay-service" />
-        <module name="dubbo-pay-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

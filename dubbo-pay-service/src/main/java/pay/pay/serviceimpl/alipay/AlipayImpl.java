@@ -1,5 +1,6 @@
 package pay.pay.serviceimpl.alipay;
 
+import org.springframework.stereotype.Service;
 import pay.common.baseRsult.Result;
 import pay.pay.api.alipay.AliPay;
 
@@ -10,6 +11,7 @@ import java.util.Map;
  * @date 2017-12-04 下午12:05
  * @description 支付宝支付
  **/
+@Service
 public class AlipayImpl implements AliPay{
 
     /**
@@ -21,6 +23,8 @@ public class AlipayImpl implements AliPay{
      */
     @Override
     public Result<?> tradeRefund(boolean isSandbox, Map<String, String> map){
+
+        System.out.println("dubbo");
 
         return null;
     }

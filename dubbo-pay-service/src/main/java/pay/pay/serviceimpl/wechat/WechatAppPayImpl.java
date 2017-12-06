@@ -1,5 +1,6 @@
 package pay.pay.serviceimpl.wechat;
 
+import org.springframework.stereotype.Service;
 import pay.pay.api.wechat.WechatAppPay;
 
 /**
@@ -8,5 +9,6 @@ import pay.pay.api.wechat.WechatAppPay;
  * @description 微信app支付
  * -适用于商户在移动端APP中集成微信支付功能。
  **/
+@Service
 public class WechatAppPayImpl extends WechatPayImpl implements WechatAppPay{
 }

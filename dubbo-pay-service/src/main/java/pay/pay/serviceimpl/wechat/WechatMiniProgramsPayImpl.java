@@ -1,5 +1,6 @@
 package pay.pay.serviceimpl.wechat;
 
+import org.springframework.stereotype.Service;
 import pay.pay.api.wechat.WechatMiniProgramsPay;
 
 /**
@@ -8,6 +9,7 @@ import pay.pay.api.wechat.WechatMiniProgramsPay;
  * @description 微信小程序支付
  * -小程序支付，是商户在微信小程序平台内实现支付功能。
  **/
+@Service
 public class WechatMiniProgramsPayImpl extends WechatPayImpl implements WechatMiniProgramsPay{
 
 }
