@@ -9,11 +9,11 @@
         <module name="dubbo-pay-api" />
         <module name="dubbo-pay-common" />
         <module name="dubbo-pay-service" />
+        <module name="dubbo-pay-web" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="dubbo-pay" target="1.8" />
-      <module name="dubbo-pay (1)" target="1.5" />
       <module name="dubbo-pay-api" target="1.8" />
       <module name="dubbo-pay-common" target="1.8" />
       <module name="dubbo-pay-service" target="1.8" />

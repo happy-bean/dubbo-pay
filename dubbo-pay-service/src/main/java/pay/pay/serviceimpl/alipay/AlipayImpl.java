@@ -11,7 +11,7 @@ import java.util.Map;
  * @date 2017-12-04 下午12:05
  * @description 支付宝支付
  **/
-@Service
+@Service("aliPay")
 public class AlipayImpl implements AliPay{
 
     /**

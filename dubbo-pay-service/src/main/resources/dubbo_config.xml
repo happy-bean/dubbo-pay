@@ -23,7 +23,7 @@
 
     <!-- 提供方应用信息，用于计算依赖关系 -->
     <dubbo:application name="dubbo-pay-service"/>
-    <dubbo:registry address="127.0.0.1"/>
+    <dubbo:registry address="N/A"/>
     <!-- 用dubbo协议在20880端口暴露服务 -->
     <dubbo:protocol name="dubbo" port="20880"/>
     <!-- 等待时间，重试2次 -->
@@ -31,9 +31,8 @@
     <!-- 启动时不检查消费者 -->
     <dubbo:consumer check="false" timeout="120000" retries="0" lazy="true"/>
 
-    <!-- 基础信息 -->
-    <dubbo:service ref="aliPay"
-                   interface="pay.pay.api.alipay.AliPay"/>
+    <!-- 声明需要暴露的服务接口 -->
+    <dubbo:service interface="pay.pay.api.alipay.AliPay" ref="alipay" />
 
-
+    <bean id="alipay" class="pay.pay.serviceimpl.alipay.AlipayImpl" />
 </beans>

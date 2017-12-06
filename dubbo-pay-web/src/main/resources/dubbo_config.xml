@@ -22,12 +22,12 @@
      -->
 
     <!-- 提供方应用信息，用于计算依赖关系 -->
-    <dubbo:application name="dobbu-client"/>
+    <dubbo:application name="dubbo-pay-web"/>
     <!-- 等待时间，重试0次 -->
     <dubbo:consumer timeout="10000" retries="0" check="false" lazy="true"/>
 
     <!-- 基础信息 -->
-    <dubbo:reference id="alipay"  interface="pay.pay.api.alipay"
+    <dubbo:reference id="alipay"  interface="pay.pay.api.alipay.AliPay"
                      url="dubbo://localhost:20880"/>
 
 
